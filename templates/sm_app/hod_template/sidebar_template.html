@@ -1,0 +1,261 @@
+{% load static %}
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="{% url 'sm_app:admin_home' %}" class="brand-link">
+      <img src="{% static 'sm_app/dist/img/BISK-New-01-White-10P-212x300.png' %}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light"><span class="font-weight-bold">BISK</span> Dashboard </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{% static 'sm_app/dist/img/Mehdi_pic-01.png' %}" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Mehdi Majid</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-header">TEACHER</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <!--  <i class="nav-icon fas fa-chalkboard-teacher"></i>  -->
+              <i class="nav-icon pr-2"><img src="{% static 'sm_app/dist/icons/teacher(1).png' %}" alt="" width="30px"> </i>
+              <p>
+                Teachers
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/add_teacher" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Teacher</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Teacher</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">STUDENT</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <!--  <i class="nav-icon fas fa-user-graduate"></i>  -->
+              <i class="nav-icon pr-2"><img src="{% static 'sm_app/dist/icons/students.png' %}" alt="" width="30px"> </i>
+              <p>
+                Students
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Student</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Students</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">COURSE</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <!--  <i class="nav-icon fas fa-chalkboard-teacher"></i>  -->
+              <i class="pr-2"><img src="{% static 'sm_app/dist/icons/online-course(1).png' %}" alt="" width="30px"> </i>
+              <p>
+                Courses
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Course</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Courses</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">SUBJECT</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="pr-2"><img src="{% static 'sm_app/dist/icons/book.png' %}" alt="" width="30px"> </i>
+              <p>
+                Subjects
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Subject</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Manage Subjects</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">Attendance</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="pr-2"><img src="{% static 'sm_app/dist/icons/attendance.png' %}" alt="" width="30px"> </i>
+              <p>
+                Attendance
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">1</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Attendance</p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-header">Feedback</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="pr-2"><img src="{% static 'sm_app/dist/icons/feedback.png' %}" alt="" width="30px"> </i>
+              <p>
+                Feedbacks
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Students Feedbacks</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Teachers Feedbacks</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-header">Leave</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="pr-2"><img src="{% static 'sm_app/dist/icons/leave.png' %}" alt="" width="30px"> </i>
+              <p>
+                Leaves
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">3</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Teachers Leave</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Students Leave</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Extra </p>
+                </a>
+              </li>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

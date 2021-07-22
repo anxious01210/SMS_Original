@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth import login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -21,9 +22,11 @@ def DoLogin(request):
         user = EmailBackEnd.authenticate(request, username=request.POST.get('email'), password=request.POST.get('password'))
         if user is not None:
             login(request, user)
-            return HttpResponse('Email: ' + request.POST.get('email') + ' Password: ' + request.POST.get('password'))
+            # return HttpResponse('Email: ' + request.POST.get('email') + ' Password: ' + request.POST.get('password'))
+            return HttpResponseRedirect('/admin_home')
         else:
-            return HttpResponse('Invalid Login!')
+            messages.error(request, 'Invalid Login Details!')
+            return HttpResponseRedirect('/')
 
 
 def GetUserDetails(request):
